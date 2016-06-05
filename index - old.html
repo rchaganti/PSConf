@@ -1,0 +1,1455 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>The PowerShell Conference Asia 2016 – Sponsored by SAPIEN Technologies</title>
+
+<meta name="keywords" content="PowerShell, Asia, 2016, Conference" />
+<meta name="description" content="Windows PowerShell Conference Asia - 2016" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+<link href="animate.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(51.518641, -0.168163);
+    var map_options = {
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: myLatlng,
+      scrollwheel: false,
+      disableDefaultUI: true
+    }
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: myIcon
+    });
+
+    /* Remove if you dont want B/W Google Map */
+    /*
+    var styles = [
+      {
+        featureType: "all",
+        stylers: [
+          { saturation: -100 }
+        ]
+      }
+    ];
+
+    map.setOptions({styles: styles});
+    */
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- Google Map Ends! -->
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- header -->
+  <div class="header">
+
+    <!-- menu -->
+    <div class="menu">
+
+      <ul>
+        <li><a href="#speakers">speakers</a></li>
+        <li><a href="#scheadule">schedule</a></li>
+        <li><a href="#registration">registration</a></li>
+        <li><a href="#sponsors">sponsors</a></li>
+        <li><a href="#organizers">organizers</a></li>
+        <li><a href="#location">location</a></li>
+      </ul>
+
+    </div>
+    <!-- menu ends! -->
+
+    <!-- header container -->
+    <div class="container">
+
+      <!-- logo or main heading -->
+      <h1><a href="#">The PowerShell Conference 2016, Asia</a></h1>
+      <!-- logo or main heading ends! -->
+
+      <!-- subtitle -->
+      <p class="subtitle">2 tracks, 2 conference days, speakers from around the world and <strong><a href="#">just 100 available seats</a></strong>.</p>
+      <!-- subtitle ends! -->
+
+      <!-- when -->
+      <div class="when">
+
+        <div class="icon-holder">
+          <i class="fa fa-calendar"></i>
+        </div>
+
+        <div>
+          <p><strong>When</strong></p>
+          <p><span>21st and 22nd Ocotober 2015</span><br />Starting at 10am</p>
+        </div>
+
+      </div>
+      <!-- when ends!-->
+
+      <!-- where -->
+      <div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>Where</strong></p>
+          <p><span>Singapore</span><br /><a href="#">Microsoft</a></p>
+        </div>
+
+      </div>
+      <!-- where ends! -->
+
+      <!-- register -->
+      <div class="register-now">
+          <p><strong>Coming soon ...!</strong></p>
+          <!-- <a href="http://www.eventbrite.sg/e/powershell-conference-asia-2015-tickets-17336891108?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.sg/custombutton?eid=17336891108" alt="Eventbrite - PowerShell Conference Asia 2015" /></a> -->
+      </div>
+      <!-- register ends! -->
+
+    </div>
+    <!-- header container ends! -->
+
+  </div>
+  <!-- header ends! -->
+
+  <!-- topics -->
+  <div class="topics">
+    <div class="container">
+
+      <h3><strong>For two days,</strong><br />PowerShell experts deliver some great content.</h3>
+        <img align="left" src="images/psconf.jpg" />
+        <p>Join us for the second PowerShell Conference Asia held in Singapore bought to you by <strong><a href="https://www.sapien.com/">SAPIEN Technologies, Inc</a></strong>. During this two-day event, PowerShell speakers from Asia and around the world will come together to bring attendees great in-depth PowerShell content.</p>
+        <p>Speakers include several members of the Windows PowerShell team and a strong line-up of MVPs, well-known international speakers, and community contributors. They'll cover in-depth topics on the PowerShell language and how you can use PowerShell to automate the technologies you use.</p>
+        <p>The conference is Friday and Saturday, minimizing the loss of work time. Arrive in Singapore on Thursday, see the sights and enjoy a social dinner, and start bright and early Friday morning. Be ready to dig deep in the hackathon on Friday afternoon.</p> 
+        <p>Our full schedule on Saturday ends with a closing session of drinks and nibbles at a local bar. Head right home on Sunday or do some sightseeing.</p>
+        <p>This event is made possible by SAPIEN Technologies, Inc., our platinum sponsor. SAPIEN has long supported the PowerShell community and they make some of the best tools on the market. With amazing folks like Ferdinand Rios, David Corrales, and June Blender, SAPIEN is hugely influential in the PowerShell community. We can't thank them enough for helping to make this event happen. SAPIEN will be present for both days and we look forward to welcoming them.</p>
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-code fa-2x"></i>
+        <h4>Learn From the Experts</h4>
+        <p>If you are getting started with Windows PowerShell, this conference jump starts your learning. For two full days, you have access to some of the best people in the PowerShell community.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-line-chart fa-2x"></i>
+        <h4>Network with others</h4>
+        <p>We will have over 100 PowerShell enthusiats from different countries and with different skill sets. Come and network! Your next great career opportunity might just be waiting for you!</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-lightbulb-o fa-2x"></i>
+        <h4>Make Ideas Happen</h4>
+        <p>You have ideas that can change the way we manage IT systems with PowerShell? This conference is the place. Let us bring those ideas to life!</p>
+      </div>
+      <!-- single topic ends! -->
+
+    </div>
+  </div>
+  <!-- topics ends! -->
+
+  <a id="speakers" class="anchor"></a>
+
+  <!-- speakers -->
+    <div class="speakers">
+        <div class="container">
+
+            <h2>The Speakers</h2>
+            <p class="subtitle">In-depth technical sessions from PowerShell experts</p>
+            <!-- featured -->
+            <div class="featured">
+
+                <div class="image">
+                    <img src="images/snover.jpg" alt="" />
+                </div>
+
+                <div>
+                    <h3>Jeffrey Snover</h3>
+                    <p class="title">Distinguished Engineer and Inventor of Windows PowerShell, Microsoft</p>
+                    <p>Jeffrey Snover is a Distinguished Engineer Microsoft and the Lead Architect for the Windows Server and System Center Division. Snover is the inventor of Windows PowerShell, an object-based distributed automation engine, scripting language, and command line shell. Snover joined Microsoft in 1999 as divisional architect for the Management and Services Division, providing technical direction across Microsoft's management technologies and products. Snover has over 30 years of industry experience with a focus on management technologies and solutions. He was an architect in the office of the CTO at Tivoli and a development manager at NetView. He has worked also as a consulting engineer and development manager at DEC, where he led various network and systems management projects. Snover held 8 patents prior to joining Microsoft, and has registered over 30 patents since. He is a frequent speaker at industry and research conferences on a variety of management and language topics.</p>
+                </div>
+            </div>
+            <!-- featured ends! -->
+            <!-- featured -->
+            <div class="featured">
+
+                <div class="image">
+                    <img src="images/nana.jpg" alt="" />
+                </div>
+                <div>
+                    <h3>Narayanan (Nana) Lakshmanan</h3>
+                    <p class="title">Lead Engineer, Windows PowerShell, Microsoft</p>
+                    <p>Narayanan (Nana) Lakshmanan is a Principal Software Engineering Manager for Windows PowerShell Desired State Configuration (DSC). Nana has over 15 years of experience in the industry. He is with the PowerShell team since its early days. Nana led the development team for DSC in PowerShell 4.0 and also led Group Policy. Prior to that he was a developer in the PowerShell team. In PowerShell 3.0, he worked on PowerShell workflows and was responsible for its connection/activity management and cross layer performance/scalability. Earlier, in PowerShell 2.0, Nana worked on PowerShell remoting and owned its protocol, experience and the PowerShell job model. In PowerShell 1.0, he worked on the formatting subsystem and packaging. Before joining Microsoft he worked in India for Hewlett Packard and others. Nana holds a Masters in Software Systems from BITS, Pilani and a Bachelors in Electronics and Communications Engineering from University of Madras.</p>
+                </div>
+            </div>
+            <!-- featured ends! -->
+            <p>Mouse-over the images for speaker names</p>
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/Senthamil.png" alt="" />
+
+                <div>
+                    <h3>Senthamil <br />Selvan</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Senthamil is Microsoft MVP in Windows Consumer Apps and has 11+ years of experience in Microsoft Platform. He has published several Windows 8 and Windows Phone 8.1 Apps in Store.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/punit.jpg" alt="" />
+
+                <div>
+                    <h3>Punit<br />Ganshani</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Punit, a Microsoft .NET MVP, is Geek, founder of KonfDB and an author of 20+ whitepapers and a book. He is an expert at Application Design & Development, Performance Optimization and defining Architecture for hybrid systems involving Microsoft, Open-Source and Messaging Platforms. He has spoken in various international forums in Asia, UK, Brazil and US. He is reachable on www.ganshani.com and @ganshani</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/dexter.jpg" alt="" />
+
+                <div>
+                    <h3>Deepak <br />Dhami</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Microsoft MVP [PowerShell] with a zeal to understand and automate. Trying his hands on automating the daily tasks and getting wiser in the process ;)</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/ravikanth.jpg" alt="" />
+
+                <div>
+                    <h3>Ravikanth<br />Chaganti</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Ravikanth is a virtualization, cloud, and enterprise application expert and works at Dell Inc. as a lead engineer in Enterprise Solutions Group. He is a multi-year recepient of MIcrosoft Most Valueable Professional (MVP) award. He is a well-known personality in the PowerShell community and a published author.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/ryan.jpg" alt="" />
+
+                <div>
+                    <h3>Ryan<br />Yates</h3>
+                    <p><strong>UK: SharePoint IT Pro based at one of the World leading UK Universities</strong></p>
+                    <p>Ryan has a SharePoint Bias and well balanced interaction with Active Directory, Azure Active Directory, Exchange Online and SQL Server. He is one of the key community project developers for the SharePoint Client Side PowerShell project on CodePlex</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/ben.jpg" alt="" />
+
+                <div>
+                    <h3>Benjamin<br />Hodge</h3>
+                    <p><strong>Organizer / Speaker</strong></p>
+                    <p>Benjamin Hodge has built and managed innovative technical teams across multiple regions for some of the world’s best Security and Network Start-ups.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/matt.jpg" alt="" />
+
+                <div>
+                    <h3>Matthew <br />Hitchcock</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Matt is a Windows PowerShell MVP and the driving force behind PowerShell Asia Conference 2015.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/milton.jpg" alt="" />
+
+                <div>
+                    <h3>Milton <br />Goh</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>MMilton is the industry hybrid guy who loves getting involve with hybrid stuffs. He started off as a Software Developer in Visual Basic programming in his career.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/janaka.png" alt="" />
+
+                <div>
+                    <h3>Janaka<br />Rangama</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Janaka Rangama is a Microsoft Certified Trainer, Microsoft Azure Specialist & an Open Source Expert with 5+ years of experience in IT.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/member_placeholder.jpg" alt="" />
+
+                <div>
+                    <h3>Desmond<br />Lee</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Desmond is a Microsoft Certified Trainer and founder of the Swiss IT Pro User Group (http://www.swissitpro.ch), an independent, non-profit organization for IT Pros by IT Pros championing Microsoft technologies. You can follow his IT adventures at http://www.leedesmond.com. Desmond is based out of Zurich, Switzerland and enjoys travelling, photography, snowboarding and scuba diving.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/faizalmohammed.jpg" alt="" />
+
+                <div>
+                    <h3>Faizal<br /> Mohammed</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Faizal, Microsoft MVP for Azure, has led global cloud computing and enterprise architecture initiatives driving strategy, transformation and architecture design and has helped numerous enterprise companies leverage cloud computing for strategic advantage, innovation and cost savings.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/gayathri.jpg" alt="" />
+
+                <div>
+                    <h3>Gayathri<br /> Narayanan</h3>
+                    <p><strong>Consultant</strong></p>
+                    <p>Gayathri is a lead Consultant in  the SharePoint Competency Centre of NCS Pte Ltd for the past 5 years, currently leading the ops team which supports few public facing portals. She has abundant technical experience for more than 12 years in different Microsoft  technologies. She is an Internal trainer, presenter and a passionate blogger. She loves to share what she learns and believes in the phrase "learning never ends". She has been trying to contribute to forums whenever possible and has provided some scripts which might help people in day to day activities. Her aim is to work as an author or even as co-author for one of the technical books.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/girish.jpg" alt="" />
+
+                <div>
+                    <h3>Girish<br />Prakash</h3>
+                    <p><strong>India: Working as Principal Engineer at Dell India R&D Center</strong></p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/ritesh.gif" alt="" />
+
+                <div>
+                    <h3>Ritesh<br />Modi</h3>
+                    <p><strong>Solutions Architect : Microsoft India</strong></p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/gokan.jpg" alt="" />
+
+                <div>
+                    <h3>Gokan <br /> Ozcifci</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Founder and Managing Consultant at Neoxy. Microsoft SharePoint MVP. TechNetTR leader. Community Warrior and TN Wiki Addict.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/em.png" alt="" />
+
+                <div>
+                    <h3>Emerald<br /> Tabirao</h3>
+                    <p><strong>Microsoft</strong></p>
+                    <p>Emerald is from the Philippines and has lived in Singapore for more than 5 years. She has worked on SharePoint since its 2007 version and also got her hands on Office 365 since its first wave. She started as a developer and eventually worked her way to becoming a SharePoint consultant. While she has focused mostly on SharePoint during her career, she is also passionate about learning new technologies. Emerald is currently working at Microsoft as a consultant.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/FerdinandRios.jpg" alt="" />
+
+                <div>
+                    <h3>Ferdinand<br /> Rios</h3>
+                    <p><strong>CEO, SAPIEN Technologies</strong></p>
+                    <p>Dr. Rios is the founder and CEO of SAPIEN Technologies, Inc. During his 35 year tenure in the software industry he has worked as a systems admin, software developer, manager, and executive. Ferdinand currently splits his time as CEO, evangelist and iOS developer.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/JaapBrasser.jpg" alt="" />
+
+                <div>
+                    <h3>Jaap<br /> Brasser</h3>
+                    <p><strong>Technical Consultant</strong></p>
+                    <p>Jaap Brasser is a Technical Consultant with a big passion for automation. As an IT professional Jaap is part of several professional communities, speaks at technical events and writes articles on a variety of subjects on his personal blog and other websites or magazines. As an active member of the PowerShell community he supports users providing answers in forums, blogs about PowerShell and creates and shares PowerShell functions and scripts.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+        </div>
+    </div>
+  <!-- speakers ends! -->
+
+    <a id="organizers" class="anchor"></a>
+
+    <!-- speakers -->
+    <div class="speakers">
+        <div class="container">
+            <h2>The Organizers</h2>
+            <p class="subtitle">The faces behind PowerShell Asia Conference 2015</p>
+            <p>Mouse-over the images for organizer names</p>
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/ben.jpg" alt="" />
+
+                <div>
+                    <h3>Benjamin<br />Hodge</h3>
+                    <p><strong>Organizer / Speaker</strong></p>
+                    <p>Benjamin Hodge has built and managed innovative technical teams across multiple regions for some of the world’s best Security and Network Start-ups.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/matt.jpg" alt="" />
+
+                <div>
+                    <h3>Matthew <br />Hitchcock</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Matt is a Windows PowerShell MVP and the driving force behind PowerShell Asia Conference 2015.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/milton.jpg" alt="" />
+
+                <div>
+                    <h3>Milton <br />Goh</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Milton is the industry hybrid guy who loves getting involve with hybrid stuffs. He started off as a Software Developer in Visual Basic programming in his career.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+            <!-- speaker -->
+            <div class="single">
+                <img src="images/ravikanth.jpg" alt="" />
+
+                <div>
+                    <h3>Ravikanth<br />Chaganti</h3>
+                    <p><strong>Microsoft MVP</strong></p>
+                    <p>Ravikanth is a virtualization, cloud, and enterprise application expert and works at Dell Inc. as a lead engineer in Enterprise Solutions Group. He is a multi-year recepient of MIcrosoft Most Valueable Professional (MVP) award. He is a well-known personality in the PowerShell community and a published author.</p>
+                </div>
+            </div>
+            <!-- speaker ends! -->
+        </div>
+    </div>
+    <!-- speakers ends! -->
+
+    <a id="why" class="anchor"></a>
+    <!-- why -->
+    <div class="why">
+        <div class="container">
+            <!-- testimonials -->
+            <div class="testimonials">
+                <h4>Speakers' Thoughts!</h4>
+                <div class="slides">
+                    <blockquote>
+                        In “Infrastructure as Code with DSC” I’ll explain what is Infra as code and why IT professionals shoould care about it. I'll also show DSC fits into this paradigm and what other tools and concepts IT professionals must acquire to be ready for the next wave of changes in data center management and automation.
+                        <cite>Ravikanth Chaganti<br /><span>Dell</span></cite>
+                    </blockquote>                    
+                    <blockquote>
+                        In "Azure Automation | Katana for Azure Ninjas," I'll explain how to create and use automation RunBooks with PowerShell for Microsoft Azure. You'll learn how to create, deploy, monitor, and maintain of Azure resources using PowerShell workflows. Also you’ll learn how to use graphical authoring of RunBooks for Azure. You need to know Azure PowerShell cmdlets, but nothing more. Let’s learn how to make PowerShell a Katana for the cloud battle. 
+                        <cite>Janaka Rangama<br /><span>Microsoft MVP</span></cite>
+                    </blockquote>
+                    <blockquote>
+                        In "Building PowerShell GUI Tool Solutions," I'll explain how to create a GUI application using PowerShell as the base language and PowerShell Studio and your development environment. You'll learn how to lay out forms, set properties, respond to events using event handlers, package your app into an executable and distribute your executable and related files as an MSI. You need to know PowerShell, but nothing about GUI creation. Come and learn how to create great visual tools for your users.
+                        <cite>Ferdinand Rios<br /><span></span></cite>
+                    </blockquote>
+                    <blockquote>
+                        In “Configuration and Management of Dell Computers using PowerShell” I’ll explain why PowerShell providers are so useful, the costs and benefits writing providers (rather than cmdlets), and how writing a PowerShell provider can simplify management of your infrastructure. You learn how to write a PowerShell provider and how to integrate providers with DSC.
+                        <cite>Girish Prakash<br /><span>Dell</span></cite>
+                    </blockquote>
+                    <blockquote>
+                        In “Building your SharePoint On-Premises and Online Solutions with PowerShell and CSOM” - with my partner in crime – we’ll demonstrate how to manage your Office 365 tenant’s SharePoint features using PowerShell with the Office 365 Developer Patterns PowerShell Cmdlets. You’ll also learn about administration with the O365 Patterns and Practices Project, solution mastering, CSOM, and Office 365 Dev PnP. This session is targeted to SharePoint IT professionals and SharePoint developers.
+                        <cite>Gokan Ozcifci<br /><span></span></cite>
+                    </blockquote>
+                    <blockquote>
+                        In "PowerShell in Visual Studio: Not just for the Developer" - I’ll explain why you should be thinking about Visual Studio as your next step in evolution into this DevOps world. You don’t need to be a developer to enjoy Visual Studio and start collaborating with colleagues to add a professional workflow to your PowerShell projects.
+                        <cite>Matt Hitchcock<br /><span>Microsoft MVP</span></cite>
+                    </blockquote>
+                    <blockquote>
+                        In "Manage your servers securely using Powershell Web Access and Custom Constrained Endpoints" - You'll learn how to use custom constrained endpoints that restrict user (and administrator) access to selected commands. I will show how to provide a secure web user interface to your administrators/users and you'll learn how to securely managing the environment from anywhere without physically logging into the server.
+                        <cite>Ritesh Modi<br /><span>Microsoft</span></cite>
+                    </blockquote>
+                    <blockquote>
+                        In “SharePoint Management & Reporting: BYO Solution,” I will demonstrate how to effectively use PowerShell with SharePoint. You'll learn how to use PowerShell with SharePoint in the most efficient way, the most common gotchas between versions, why SharePoint Online is a different world from on-premises, the areas that you really want to report on, and correct SharePoint Site object disposal within PowerShell – to reduce memory leaks in your scripts.
+                        <cite>Ryan Yates<br /><span></span></cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- testimonials ends! -->
+        </div>
+    </div>
+    <!-- why ends! -->
+  <a id="scheadule" class="anchor"></a>
+
+  <!-- schedule -->
+    <div class="schedule">
+        <div class="container">
+            <h2>Conference Schedule</h2>
+            <p class="subtitle">packed with high quality content, just for you.</p>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Day 1, Track 1</a></li>
+                    <li><a href="#tabs-2">Day 1, Track 2</a></li>
+                    <li><a href="#tabs-3">Day 2, Track 1</a></li>
+                    <li><a href="#tabs-4">Day 2, Track 2</a></li>
+                </ul>
+                <!-- day -->
+                <div id="tabs-1" class="day">
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">08:30 <span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Breakfast</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">09:00 - 09:45 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">State Of Union</a></h4>
+                                <p class="speaker"><strong>Jeffrey Snover</strong><br />Microsoft</p>
+                                <p><img src="images/small_member_placeholder.jpg" alt="" /> </p>
+                                <p>The inventor of PowerShell, Jeffrey Snover, joins us live from Redmond via Skype to present an update on PowerShell as a Technology. Hear directly from the creator and the Lead Architect for Windows Server and System Center on what you can expect from PowerShell next and what’s important to focus your energy on!</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">09:45<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Break</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">10:00 - 11:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Building PowerShell GUI Tool Solutions</a></h4>
+                                <p class="speaker"><strong>Dr. Ferdinand Rios</strong><br />SAPIEN Technologies</p>
+                                <p>PowerShell is great for automating processes, managing servers and just about anything else you need to do on the Windows platform from an administrative perspective. As an admin though, you may need to service individuals who know nothing about PowerShell, command lines or consoles. You will need advanced GUI tools that you or your customers can run on their desktops to get you the information you need to solve their problems. Additionally, advanced PowerShell developers and administrators need more advanced tooling. Using PowerShell Studio, we will walk you through the workflow of creating GUI based tools that run PowerShell behind the scenes. </p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">11:00 - 12:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Windows Desired State Configuration</a></h4>
+                                <p class="speaker"><strong>Benjamin Hodge</strong><br />Kemp Technologies</p>
+                                <p>Are you paying attention to DevOps? Adoption of DevOps practices can greatly improve your company’s deployment efficiency. PowerShell Desired State Configuration (DSC) helps teams take the management of their Windows-based infrastructure into the DevOps space by capturing their infrastructure as "code". The declarative PowerShell model enables autonomous, and transparent configuration and deployment of Windows infrastructure and components. Capturing infrastructure as "code" is not only a means to manage what they have, at scale and speed, it is also a way to decouple the complexity of their existing environment in order to facilitate a migration to the cloud. Come see how DSC works and how you can use it to make configuration of internal applications, databases, and other infrastructure elements more efficient.<p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">12:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Lunch</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">13:00 - 14:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Infrastructure as Code with Desired State Configuration (DSC)</a></h4>
+                                <p class="speaker"><strong>Ravikanth Chaganti</strong><br />Microsoft MVP</p>
+                                <p>With DevOps pratices gaining momentum in the enterprises and startups, it is important for infrastructure administrators gear up for this new way of working. Infrastructure as code practices enable administrators to implement infrastrcture configuration as code. Administrators in their new role as infrastructure developers need to think and act like application developers. This sessions the attendees through what infrastructure as code is and what role DSC plays here.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">14:00 - 15:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">DSC internals - Deep Dive</a></h4>
+                                <p class="speaker"><strong>Nana Lakshmanan</strong><br />Microsoft</p>
+                                <p>DSC Internals Deep Dive focuses essentially on what happens from the time you generate a mof document to the time the LCM enforces the configuration and things around it.<p> 
+                                <p>In this session we cover:</p>
+                                <p>Lifecycle of a DSC document</p>
+                                <p>LCM State</p>
+                                <p>Configuration Status and Retrieval</p>
+                                <p>Delivering a DSC document</p>
+                                <p>Meta Configuration</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">15:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Break</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">15:30 - 16:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Azure Automation | Katana for Azure Ninjas</a></h4>
+                                <p class="speaker"><strong>Janaka Rangama</strong><br />Microsoft MVP</p>
+                                <p>walk you through the foundations of PowerShell workflows, Azure Runbooks & Automation jobs which deliver more reliable services, faster than you ever imagined.
+
+Janaka is a Technical Consultant at Infront Consulting Group, Microsoft MVP : Cloud and Datacenter Management, a Cloud Architect and an Open Source Evangelist. Janaka is a community contributor, Professional Trainer, International Speaker & an Avid Blogger. You can him via http://tekronin.net or through his twitter handle @JanakaRangama</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">16:30 - 17:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Discussion Panel - "Microsoft + DevOps + Your Career"</a></h4>
+                                <p class="speaker"><strong>DSC and DevOps Experts</strong><br /></p>
+                                <p>With everything we are hearing about DevOps and changes to the Microsoft platform, IT Pro's are both confused and concerned about what this means, both in terms of their roles and what new skills they need to survive in this future mode of operations. In this dicussion panel we hear from Microsoft engineers, consultants and Operations staff from different companies about the state of DevOps, what the envisioned changes to Microsoft technoligies are and how it might impact you.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">17:30<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Closing Note</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                </div>
+                <!-- day ends! -->
+                <!-- day -->
+                <div id="tabs-2" class="day">
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">08:30 <span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Breakfast</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">09:00 - 09:45 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">NO SESSION</a></h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">09:45<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Break</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">10:00 - 11:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">NO SESSION</a></h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">11:00 - 12:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">NO SESSION</a></h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">12:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Lunch</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">13:00 - 14:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">PowerShell Scripting Primer with Menial SharePoint Scripting</a></h4>
+                                <p class="speaker"><strong>Emerald Tabirao</strong><br />Microsoft</p>
+                                <p>While there are lots of PowerShell scripts available online that come in handy when we need to achieve certain administrative tasks, wouldn't it be better to be able to create the script ourselves? This session will deliver a primer to PowerShell scripting enough to equip administrators to achieve or, better yet, automate certain administrative tasks. The session will sample some administrative SharePoint scripting along the way.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">14:00 - 15:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Powershell in SharePoint 2013 - a Powerful Management Tool</a></h4>
+                                <p class="speaker"><strong>Gayathri Narayanan</strong><br />Technical Consultant</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">15:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Break</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">15:30 - 16:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Building your SharePoint On-Premises and Online Solutions with PowerShell and CSOM</a></h4>
+                                <p class="speaker"><strong>Gokan Ozcifci/Gilles Pommier</strong><br /></p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">16:30 - 17:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">NO SESSION</a></h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">17:30<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>NO SESSION</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                </div>
+                <!-- day ends! -->
+                <!-- day -->
+                <div id="tabs-3" class="day">
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">08:30 <span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Breakfast</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">09:00 - 10:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Advanced DSC Concepts</a></h4>
+                                <p class="speaker"><strong>Nana Lakshmanan</strong><br />Microsoft</p>
+                                <p>In this session we will cover:</p>
+                                <p>How Servers coordinate between each other as they apply DSC Configurations (the WaitFor Resource)</p>
+                                <p>Partial Configurations - how do you set up DSC when different teams own different configuration items on the servers</p>
+                                <p>Reporting - how do you get detailed information about DSC State</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">10:00 - 11:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Creating Elegant Code</a></h4>
+                                <p class="speaker"><strong>Benjamin Hodge</strong><br />Kemp Technologies</p>
+                                <p>In the rough and tumble world of IT Pro’s and project deadlines there’s a lot of incentive to just bang out a few “one liners” and focus on “getting the job done”. At the time this makes perfect sense but there’s a big price paid in terms of re-usability and maintenance of that code if we just leave it that way after the dust has settled. In this talk Benjamin will show you how to use a few simple rules to quickly take the ugliest code that you (or others!) have created in the heat of the moment and produce beautiful, elegant functions and modules that you can be proud of.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">11:00 - 12:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">PowerShell Security Features and Threat Management</a></h4>
+                                <p class="speaker"><strong>Jaap Brasser</strong><br />Technical Consultant</p>
+                                <p>In the PowerShell security features and threat management session I will walk you through a number of considerations of PowerShell and security. This will include the new features such as Deep script block logging, PowerShell integration with Antimalware Scan but also how PowerShell can be used as a post exploitation tool and I will give some insights on how to defend yourself against such attacks.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">12:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Lunch</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">13:00 - 14:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Object Oriented .NET with PowerShell</a></h4>
+                                <p class="speaker"><strong>Punit Ganshani</strong><br />Microsoft MVP</p>
+                                <p>Object Oriented Programming has been an essential skill for developers and over the years the technical fraternity has witnessed several OOP languages and leveraged their benefits. Using object orientation in PowerShell can take your scripts go to different level.
+
+The session will focus on using .NET with PowerShell – creating classes in PowerShell, objects, reference types, events, loading assembly and alike. Leverage your .NET skills and create managed-PowerShell scripts!</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">14:00 - 15:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Why to Pester PowerShell Scripts?</a></h4>
+                                <p class="speaker"><strong>Deepak Dhami</strong><br />Microsoft MVP</p>
+                                <p>As we write more and more Production PowerShell code, good quality testing is essential to ensure it is Production ready. PowerShell now includes a Testing Framework for PowerShell; Pester. In this session, we will take an already written function and write Pester tests for it. Also we will take a look at writing tests first and then do Behaviour driven development of the code.
+Build Trust into your code before you deploy and use in Production!</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">15:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Break</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">15:30 - 16:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Manage your server securely using PowerShell Web Access and custom constrained endpoints</a></h4>
+                                <p class="speaker"><strong>Ritesh Modi</strong><br />Microsoft</p>
+                                <p>In the current world of Information Technology, protective measures do not stop at the network edge.  There have been reports to indicate the need to protect assets using measures that reduce administrative access.  While the principle of least privilege has always been known to IT Security professionals, there is a need in the industry for a standardized method of constructing an operator experience that reduces access with a more sophisticated level of granularity than what is available in many traditional access control models. Custom Remoting Constrained endpoints helps us to achieve that. PowerShell Web Access (PSWA) feature in Windows Server 2012 allows remote administrative access to a set of servers with granular delegated access and only expose specific administrative privileges to different levels to support teams. PowerShell Web Access combined with custom constrained endpoints bring you a great way to manage and delegate admin access remotely. This level 400 demo heavy session will delve into the details about using Powershell Web Access along with Remoting constrained endpoints.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">16:30 - 17:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Configuration and Management of Dell Computers Client/Desktop using PowerShell</a></h4>
+                                <p class="speaker"><strong>Girish Prakash</strong><br />Dell Inc.</p>
+                                <p>A Windows PowerShell provider allows any data store to be exposed like a file system as if it were a mounted drive. In this session I will share my experience with writing PowerShell Providers for systems, the challenges I came across while doing so, and how I solved them. You will learn when you should consider creating a Provider versus cmdlets, and how to integrate help into your Providers you create along with the generic commands used. This session will feature some great demos to demonstrate the power of Providers using DELL PowerShell Provider and how easy it is going to get managing Dell systems (primarily client systems). As a natural next step to management using PowerShell, I will briefly demonstrate how DSC can be wrapped around the existing implementation.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">17:30<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Event Closing at Local Venue including Prizes, Food, Drinks and Networking Session.</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                </div>
+                <!-- day ends! -->
+                <!-- day -->
+                <div id="tabs-4" class="day">
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">08:30 <span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Breakfast</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">09:00 - 10:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">NO SESSION</a></h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">10:00 - 11:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">SharePoint Online Management Shell</a></h4>
+                                <p class="speaker"><strong>Senthamil Selvan</strong><br />Microsoft MVP</p>
+                                <p>SharePoint Online Management Shell is a Windows PowerShell module that you can use to efficiently manage SharePoint Online users, sites, site collections, and organizations. Command-line operations in Windows PowerShell are composed of cmdlets.
+                                <p>The Management Sell consists of the below cmdlets</p>
+                                <p>1.	User Management</p>
+                                <p>2.	Group management</p>
+                                <p>3.	Site Collection Management</p>
+                                <p>4.	Monitoring</p>
+                                <p>5.	OneDrive</p>
+                                <p>This session focus more on the Site collection management for the SharePoint Online.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">11:00 - 12:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">SharePoint Management & Reporting: BYO Solution</a></h4>
+                                <p class="speaker"><strong>Ryan Yates</strong><br />Technical Consultant</p>
+                                <p>
+                                    With the differences in SharePoint Online and On-Premises we will look at the key KPI's that are required for each environment from a SharePoint Administrator Point of view and how we can perform most of these much needed reporting solutions using PowerShell.
+
+                                    From there we will also look at a visual representation of this within SharePoint - for those that dare to hold KPI information in the system that they are wanting to report on.
+
+                                    From here on this should give you an evolutionary trajectory on whether this as a solution is correct within your environment or whether you may wish to tweek this as required for your own circumstances
+                                </p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">12:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Lunch</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">13:00 - 14:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Collaborative PoweShell with GitHub</a></h4>
+                                <p class="speaker"><strong>Matt Hitchcock</strong><br />Microsoft MVP and Consultant at Microsoft</p>
+                                <p>Version Control is not just for tracking and reverting code changes, it is also for collaboration - and it's not just for Developers! This session focuses on getting started with GitHub to take an "environmentally and financially friendly" approach to creating PowerShell solutions. Evolution happens faster when we collaborate, come and find out how you contribute.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">14:00 - 15:00 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Building infrastructure with Azure Resource Manager and PowerShell</a></h4>
+                                <p class="speaker"><strong>Faizal Mohammed</strong><br />Microsoft MVP</p>
+                                <p>Azure Resource Manager simplifies the process of creating complex environments for image development, testing, and production in a repeatable manner, during this session I will run through an introduction to how you can build your infrastructure in Azure with Azure Resource Manager using Powershell and with templates.
+Mohamed Faizal, Microsoft MVP in Microsoft Azure, 17+ years of experience in IT Industry. Focus on SharePoint, Microsoft Azure, Office 365, Information Management, Knowledge Management and Portal / Public facing websites</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">15:00<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Break</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">15:30 - 16:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">PowerShell Management Tips & Tricks in Lync/Skype for Business Server</a></h4>
+                                <p class="speaker"><strong>Desmond Lee</strong><br />Microsoft MVP</p>
+                                <p>PowerShell is part and parcel of Lync Administration since Server 2010. Learn how to effectively put the many great cmdlets together to build useful scripts to monitor and manage your global environment in this demo driven session.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event extend">
+                        <!-- event time -->
+                        <div class="event-time">16:30 - 17:30 <span><i class="fa fa-angle-up"></i></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4><a href="#">Manage Office 365 with PowerShell</a></h4>
+                                <p class="speaker"><strong>Jaap Brasser</strong><br />Technical Consultant</p>
+                                <p>The Manage Office 365 and Azure AD session contains information about managing and deploying Office 365 with or without Azure AD. You will learn about setting up Azure Active Directory Synchronization, managing user accounts, configuring federation and configuring basic reports in order to effectively administer and manage your Office 365 environment.</p>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                    <!-- single event -->
+                    <div class="event">
+                        <!-- event time -->
+                        <div class="event-time">17:30<span></span></div>
+                        <!-- event time ends! -->
+                        <!-- event details -->
+                        <div class="event-info">
+                            <div>
+                                <h4>Event Closing at Local Venue including Prizes, Food, Drinks and Networking Session.</h4>
+                            </div>
+                        </div>
+                        <!-- event details ends! -->
+                    </div>
+                    <!-- single event ends! -->
+                </div>
+                <!-- day ends! -->
+            </div>
+
+        </div>
+    </div>
+  <!-- schedule ends! -->
+
+  <a id="registration" class="anchor"></a>
+
+  <!-- registration -->
+    <div class="registration">
+        <div class="container">
+
+            <h2>Pricing & Registration</h2>
+            <p class="subtitle"><strong>Only 100 available seats</strong> Get your Conference Tickets early.</p>
+
+            <p class="desc">We have opened up <a id="registration" href="http://psconfasia2015.eventbrite.sg">registration on eventbrite</a>. We are accepting payment by paypal and registration is not confirmed until payment is made.</p>
+            <p><a href="http://www.eventbrite.sg/e/powershell-conference-asia-2015-tickets-17336891108?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.sg/custombutton?eid=17336891108" alt="Eventbrite - PowerShell Conference Asia 2015" /></a></p>
+            <h3>What do you get for your money?</h3>
+            <!-- register form -->
+            <div class="form">
+                <ul>
+                    <li><p class="desc">2 days of intense sessions with international speakers</p></li>
+                    <li><p class="desc">Breakfast, lunch and afternoon tea on both days</p></li>
+                    <li><p class="desc">T-Shirt and sponsor giveaways</p></li>
+                    <li><p class="desc">Entry to the Closing Party on Saturday evening (food & drinks included)</p></li>
+                    <li><p class="desc">Connect with other PowerShell enthusias in the region</p></li>
+                    <li><p class="desc">Network with peers, MVPs, speakers and the PowerShell Team!</p></li>
+                </ul>
+            </div>
+            <!-- register form ends! -->
+            <!-- prices -->
+            <div class="price">
+                <div>
+                    <p class="amount">$200</p>
+                    <h4>Normal</h4>
+                    <p>1 day before event starts</p>
+                </div>
+            </div>
+            <!-- prices ends! -->
+
+        </div>
+    </div>
+  <!-- registration ends! -->
+
+  <a id="sponsors" class="anchor"></a>
+
+  <!-- sponsors -->
+    <div class="sponsors">
+        <div class="container">
+
+            <h2>Sponsors & Partners</h2>
+            <p class="subtitle">We are produly associated with SAPIEN Technologies, Kemp Techonologies, and Microsoft!</p>
+
+            <div class="slides">
+                <ul>
+                    <li><a href="#"><img src="images/logo3.png" /></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="images/kemp.png" /></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="images/microsoft.png" /></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+  <!-- sponsors ends! -->
+
+  <a id="location" class="anchor"></a>
+
+  <!-- location -->
+  <div class="location">
+    <div class="container">
+
+      <h2>Location and Venue</h2>
+      <p class="subtitle">area full of great hotels and restaurants.</p>
+
+      <!-- info -->
+      <div class="info">
+
+        <div class="maps">
+
+          <div class="images">
+            <img src="images/placeholder.jpg" />
+          </div>
+
+        </div>
+
+        <div class="address">
+
+          <h4>Spend two full days in the cosmopolitan city of Singapore. The area is full of great hotels, restaurants and places to visit.</h4>
+
+          <h5><i class="fa fa-chevron-right"></i> Venue</h5>
+
+          <div class="venue">
+            <p><span>Microsoft Operations Pte Ltd.</span></p>
+            <p>1 Marina Blvd</p>
+            <p>Singapore, 018989</p>
+          </div>
+        <h5><i class="fa fa-chevron-right"></i> GET-HERE : Travel Tips</h5>
+            <p>If you’ve never been to Singapore, here's some information to help you plan your stay. Questions? Contact <a href="mailto:PSConfAsiaTravel@singaporepowershell.org">psconfasiatravel@singaporepowershell.org</a>.</p>
+            <p>We have also put together these travel tips and must knows in an easy to read document. You can <a href="https://onedrive.live.com/redir?resid=E599064362A82FC0!332&authkey=!AAa9cuUcK9DZ6oE&ithint=file%2cpdf">download it for offline reading</a>.</p>
+
+        </div>  
+      </div>
+      <!-- info ends! -->
+    
+    </div>
+  </div>
+  <!-- location ends! -->
+
+  <!-- social -->
+  <div class="social">
+    <div class="container">
+
+      <div>
+        <h2>Keep me informed</h2>
+        <p class="subtitle">Signup for regular updates or connect via social networks</p>
+
+          <form action="http://powershell.us7.list-manage.com/subscribe/post?u=a239a41647689f0a8b2a47b65&amp;id=b82e5948aa" method="post">
+              <input type="text" name="EMAIL" placeholder="enter your email address" />
+              <button name="submit" type="submit"><i class="fa fa-arrow-circle-right"></i></button>
+          </form>
+
+        <a href="http://twitter.com/SGPOSHUG"><i class="fa fa-twitter"></i></a>
+      </div>
+
+    </div>
+  </div>
+  <!-- social ends! -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+
+            <p>Photo Credits: Alvin Lau, Microsoft MVP.</a></p>
+
+        </div>
+    </div>
+    <!-- footer ends! -->
+
+</div>
+
+<!-- back to top -->
+<div class="back">
+  <div class="container">
+
+    <a href="#top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+  </div>
+</div>
+<!-- back to top ends! -->
+
+<!-- contact form overlay popup -->
+<div class="overlay" style="display: none;">
+
+  <div class="contact-form">
+    
+    <h3>Got a question?</h3>
+    <p>Send your message. We will get back as soon as we can!</p>
+
+    <!-- contact form -->
+    <div class="form">
+        <form action="contact.php" method="post">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <button name="submit" type="submit">Send Message</button>
+        </form>
+    </div>
+    <!-- contact form ends! -->
+
+    <!-- Do Not Remove! -->
+    <p class="error"></p>
+    <p class="message"></p>
+    <!-- Do Not Remove! Ends! -->
+
+    <a href="#" class="close-contact-form"><i class="fa fa-times fa-lg"></i></a>
+  </div>
+
+</div>
+<!-- contact form overlay popup ends! -->
+
+<!-- scripts -->
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="scripts/flexslider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.parallax-1.1.3.js"></script>
+<script src="scripts/jquery.inview.min.js"></script>
+<script src="scripts/form.js"></script>
+<script src="scripts/theme.js"></script>
+<!-- scripts ends! -->
+
+</body>
+</html>
